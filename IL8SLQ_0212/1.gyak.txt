@@ -1,0 +1,15 @@
+git clone URL
+	-A git clone paranccsal le tudjuk clone- ozni a távoli repositorinkat
+
+git status
+	-A git status paranccsal megmutatja mi változott.
+git add .
+	-kijelöljük, hogy mely fileokat ajánljuk a Git figyelmébe.
+git commit -m "first commit"
+	-elkönyveli a változásokat a kísérleti ágban. Bármikor visszatérhetünk a fő ágra
+git push
+	-feltöltjük a változásokat
+git pull
+	-letöltjük a változásokat
+git sync
+	-syncronizálunk a távoli gittel
