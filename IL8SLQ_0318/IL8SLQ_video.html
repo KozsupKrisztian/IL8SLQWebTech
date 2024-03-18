@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header" style="font-size: xx-large;">Video Lejátszása-IL8SLQ</header>
+    <br><br>
+    <video id="KK" width="500px" height="fit-content" controls>
+        <source src="IL8SLQ_video.mp4" type="video/mp4">
+        <source src="IL8SLQ_video.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      <br><br>
+      <button onclick="play()">Play</button>
+      <button onclick="pause()">Pause</button>     
+      <button onclick="playPause()">Play/Pause</button>    
+
+      <br><br>
+      <button onclick="mute()">néma</button>
+      <button onclick="halk()">Halk</button>
+      <button onclick="hangos()">Hangos</button>     
+      <button onclick="nagyon_lassu()">nagyonlassu</button>
+      <button onclick="lassu()">lassu</button>
+      <button onclick="normalsebb()">normál</button>
+      <button onclick="gyors()">gyors</button>
+      <button onclick="nagyon_gyors()">nagyon gyors</button>
+      <br><br>
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>    
+      <button onclick="befejez()">befejeződött-e</button>
+      <button onclick="videohossza()">videó hossza(mp)</button>
+      <button onclick="videojelenleg()">videó jelenlegi hossza</button>
+      <br><br>
+      
+
+      <hr >
+      <hr>
+
+      <footer>
+
+        <span style="float: right;">
+            <p>Források:<a href="https://www.w3schools.com/html/html5_video.asp">https://www.w3schools.com/html/html5_video.asp</a></p>
+            
+        </span>
+      </footer>
+      <script> 
+        var myVideo = document.getElementById("KK"); 
+        
+        function playPause() { 
+          if (KK.paused) 
+            myVideo.play(); 
+            
+          else 
+            myVideo.pause(); 
+        } 
+        function play() { 
+          myVideo.play(); 
+        }
+        function pause() { 
+          myVideo.pause(); 
+        }
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 500; 
+        } 
+        function mute(){
+            myVideo.muted = true;
+        }
+        function unmute(){
+            myVideo.muted = false;
+        }
+        function halk(){
+          myVideo.volume = 0.5;
+        }
+        function hangos(){
+          myVideo.volume = 1;
+        }
+        function nagyon_lassu()
+        {
+          myVideo.playbackRate = 0.5;
+        }
+        function lassu()
+        {
+          myVideo.playbackRate = 0.75;
+        }
+        function normalsebb()
+        {
+          myVideo.playbackRate = 1;
+        }
+        function nagyon_gyors(){
+          myVideo.playbackRate = 1.5;
+        }
+        function gyors()
+        {
+          myVideo.playbackRate = 1.25;
+        }
+        function videohossza()
+        {
+          alert(myVideo.duration);
+        }
+        function videojelenleg()
+        {
+          alert(myVideo.currentTime);
+        }
+        function befejez()
+        {
+          if (myVideo.ended){
+            alert("A videó befejeződött");
+          }
+          else {
+            alert("A videó nem fejeződött be");
+          
+          }
+        }
+        
+        </script> 
+</body>
+</html>
