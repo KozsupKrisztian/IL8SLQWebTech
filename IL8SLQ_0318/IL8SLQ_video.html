@@ -56,81 +56,81 @@
       <script> 
         var myVideo = document.getElementById("KK"); 
         
-        function playPause() { 
-          if (KK.paused) 
+          function playPause() { 
+            if (KK.paused) 
+              myVideo.play(); 
+              
+            else 
+              myVideo.pause(); 
+          } 
+          function play() { 
             myVideo.play(); 
-            
-          else 
+          }
+          function pause() { 
             myVideo.pause(); 
-        } 
-        function play() { 
-          myVideo.play(); 
-        }
-        function pause() { 
-          myVideo.pause(); 
-        }
-        
-        function makeBig() { 
-            myVideo.width = 560; 
-        } 
-        
-        function makeSmall() { 
-            myVideo.width = 320; 
-        } 
-        
-        function makeNormal() { 
-            myVideo.width = 500; 
-        } 
-        function mute(){
-            myVideo.muted = true;
-        }
-        function unmute(){
-            myVideo.muted = false;
-        }
-        function halk(){
-          myVideo.volume = 0.5;
-        }
-        function hangos(){
-          myVideo.volume = 1;
-        }
-        function nagyon_lassu()
-        {
-          myVideo.playbackRate = 0.5;
-        }
-        function lassu()
-        {
-          myVideo.playbackRate = 0.75;
-        }
-        function normalsebb()
-        {
-          myVideo.playbackRate = 1;
-        }
-        function nagyon_gyors(){
-          myVideo.playbackRate = 1.5;
-        }
-        function gyors()
-        {
-          myVideo.playbackRate = 1.25;
-        }
-        function videohossza()
-        {
-          alert(myVideo.duration);
-        }
-        function videojelenleg()
-        {
-          alert(myVideo.currentTime);
-        }
-        function befejez()
-        {
-          if (myVideo.ended){
-            alert("A videó befejeződött");
           }
-          else {
-            alert("A videó nem fejeződött be");
           
+          function makeBig() { 
+              myVideo.width = 560; 
+          } 
+          
+          function makeSmall() { 
+              myVideo.width = 320; 
+          } 
+          
+          function makeNormal() { 
+              myVideo.width = 500; 
+          } 
+          function mute(){
+              myVideo.muted = true;
           }
-        }
-        
+          function unmute(){
+              myVideo.muted = false;
+          }
+          function halk(){
+            myVideo.volume = 0.5;
+          }
+          function hangos(){
+            myVideo.volume = 1;
+          }
+          function nagyon_lassu()
+          {
+            myVideo.playbackRate = 0.5;
+          }
+          function lassu()
+          {
+            myVideo.playbackRate = 0.75;
+          }
+          function normalsebb()
+          {
+            myVideo.playbackRate = 1;
+          }
+          function nagyon_gyors(){
+            myVideo.playbackRate = 1.5;
+          }
+          function gyors()
+          {
+            myVideo.playbackRate = 1.25;
+          }
+          function videohossza()
+          {
+            alert(myVideo.duration);
+          }
+          function videojelenleg()
+          {
+            alert(myVideo.currentTime);
+          }
+          function befejez()
+          {
+            if (myVideo.ended){
+              alert("A videó befejeződött");
+            }
+            else {
+              alert("A videó nem fejeződött be");
+            
+            }
+          }
+          
         </script> 
 </body>
 </html>
