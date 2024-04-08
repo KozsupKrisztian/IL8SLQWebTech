@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1> JSON megvalósítása – JavaScript</h1>
+    <br><br>
+    <p id="test"></p>
+    <script>
+        let obj={
+            "book": [
+                {
+                    "title": "Java 2 I-II. - Útikalauz programozóknak 5.0",
+                    "author": "Nyékyné Dr. Gaizler Judit",
+                    "year": 2009
+                },
+                {
+                    "title": "C# programozás lépésről lépésre",
+                    "author": "Reiter István",
+                    "year": 2018
+                }
+            ]
+  }
+  for (let i = 0;i<obj.book.length;i++) {
+    document.getElementById("test").innerHTML += "<br>"+obj.book[i].title+" ;"+obj.book[i].author+" ;"+obj.book[i].year+"<br>";
+  }
+    </script>
+</body>
+</html>
