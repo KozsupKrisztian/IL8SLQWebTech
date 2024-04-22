@@ -4,8 +4,8 @@ $(document).ready(function(){
     function animateBox() {
         animation = $("#box")
         .animate({
-            left: '300px',
-            width: '300px',
+            left: '600px',
+            width: '600px',
             fontSize: '30pt'
         }, 1000)
         .animate({
@@ -15,7 +15,7 @@ $(document).ready(function(){
             fontSize: '24pt'
         }, 1000)
         .animate({
-            left: '150px',
+            left: '0px',
             opacity: '0.4'
         }, 1000)
         .animate({
@@ -23,22 +23,11 @@ $(document).ready(function(){
             fontSize: '12pt'
         }, 1000)
         .animate({
-            left: '150px',
-            top: '50px',
-            width: '150px',
-            height: 'auto',
-            fontSize: '12pt',
-            opacity: '1'
+            top: '0px',
+            opacity: '1',
+            fontSize: '12pt'
         }, 1000, function(){
             alert("VÉGE");
-            $("#box").css({
-                left: '150px',
-                top: '50px',
-                width: '150px',
-                height: 'auto',
-                fontSize: '12pt',
-                opacity: '1'
-            });
         });
     }
 
