@@ -2,7 +2,8 @@ $(document).ready(function(){
     var animation;
 
     function animateBox() {
-        animation = $("#box").animate({
+        animation = $("#box")
+        .animate({
             left: '600px',
             width: '600px',
             fontSize: '30pt'
@@ -30,11 +31,35 @@ $(document).ready(function(){
             opacity: '1'
         }, 1000, function(){
             alert("VÉGE");
+            $("#box").css({
+                left: '300px',
+                top: '100px',
+                width: '300px',
+                height: 'auto',
+                fontSize: '12pt',
+                opacity: '1'
+            });
         });
     }
 
     $("#startAnimation").click(function(){
         animateBox();
+    });
+
+    $("#resetAnimation").click(function(){
+        $("#box").stop();
+        $("#box").css({
+            left: '300px',
+            top: '100px',
+            width: '300px',
+            height: 'auto',
+            fontSize: '12pt',
+            opacity: '1'
+        });
+    });
+
+    $("#stopAnimation").click(function(){
+        $("#box").stop();
     });
 
     $("#resetAnimation").click(function(){
