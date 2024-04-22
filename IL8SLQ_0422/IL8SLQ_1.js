@@ -30,6 +30,9 @@ $(document).ready(function(){
             alert("VÉGE");
         });
     }
+    $("#osszecsukKinyit").click(function(){
+        $("#box").slideToggle();
+    });
 
     $("#startAnimation").click(function(){
         animateBox();
