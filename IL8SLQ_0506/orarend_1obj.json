@@ -1,0 +1,29 @@
+{
+    "kurzusnev":"Szoftvertechnológia gyako",
+    "oktato":"Mészáros Gergely",
+    "szak":"MI",
+    "idopont":
+    {
+        "nap":"Hétfő",
+        "tol":"16:00",
+        "ig":"18:00"
+    },
+    "helyszin":"C1/202A C1 II. em. 202A",
+    "cim":
+    {
+        "street":"Egyetemváros",
+        "city":"Miskolc",
+        "code":"1021"
+    },
+    "phone number":
+    [
+        {
+            "type":"Vezetékes",
+            "number":"0648321456"
+        },
+        {
+            "type":"Mobil",
+            "number":"06201237897"
+        }
+    ]
+}
